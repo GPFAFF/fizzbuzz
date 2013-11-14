@@ -1,4 +1,4 @@
-<script>
+
 for (var i = 1; i <= 100; i++){
   var output = i;
   if(i%3===0 && i%5===0){
@@ -11,4 +11,3 @@ for (var i = 1; i <= 100; i++){
     output="Buzz"
   }
 console.log(output);
-</script>
