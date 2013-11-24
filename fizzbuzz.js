@@ -1,13 +1,19 @@
+for (var i= 1; i<=100; i++) {
 
-for (var i = 1; i <= 100; i++){
-  var output = i;
-  if(i%3===0 && i%5===0){
-    output="FizzBuzz"
-  }
-  else if(i%3===0){
-    output="Fizz"
-  }
-  else if(if%5===0){
-    output="Buzz"
-  }
-console.log(output);
+if (i%3 === 0) {
+
+     if (i%5 === 0) {
+       console.log("FizzBuzz");
+   }
+   else {
+       console.log("Fizz");
+   }
+}
+
+else if (i%5 === 0) {
+    console.log("Buzz");
+}
+else {
+console.log(i);
+}
+}
