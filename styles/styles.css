@@ -1,0 +1,35 @@
+body{
+	width: 100%;
+	height: auto;
+	background: red;
+	font-family: 'Passion One', cursive;
+}
+
+.wrapper{
+	margin: 0 auto;
+	text-align: center;
+}
+h1{
+	text-align: center;
+}
+.number{
+	min-height: 600px;
+	width: 50%;
+	background: gray;
+	margin: 0 auto;
+	border-radius: 4px 4px 4px;
+	position: relative;
+
+}
+h3{
+	text-align: center;
+	position: relative;
+	padding-top: 200px;
+	font-size: 40px;
+}
+footer{
+	position: relative;
+	bottom: 0;
+	text-align: center;
+	padding-top: 20px;
+}
