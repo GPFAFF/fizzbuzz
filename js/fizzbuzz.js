@@ -9,6 +9,9 @@ $('button').on('click', function () {
         fizzBuzz(num);
     }
 });
+$('.restart').click(function(){
+     location.reload();
+});
 
 function fizzBuzz(num) {
     var FizzBuzz;
