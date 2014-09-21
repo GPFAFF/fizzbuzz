@@ -1,5 +1,4 @@
 body{
-	width: 100%;
 	height: auto;
 	background: red;
 	font-family: 'Passion One', cursive;
@@ -8,9 +7,12 @@ body{
 .wrapper{
 	margin: 0 auto;
 	text-align: center;
+	width: 70%;
 }
 h1{
 	text-align: center;
+	width: 20%;
+	margin: 0 auto;
 }
 .number{
 	min-height: 600px;
@@ -18,18 +20,38 @@ h1{
 	background: gray;
 	margin: 0 auto;
 	border-radius: 4px 4px 4px;
-	position: relative;
+	display: none;
+    margin: 2% auto 0;
+    padding: 10px;
+    border: 1px solid black;
+    text-align: center;
 
 }
-h3{
-	text-align: center;
-	position: relative;
-	padding-top: 200px;
-	font-size: 40px;
+button{
+	width: 17em;
+	height: 5em;
+	border-radius: 10px 10px 10px;
+	
+}
+input{
+	border-radius: 10px 10px 10px;
+	padding: 20px;
+	margin-top: 70px;
 }
 footer{
-	position: relative;
-	bottom: 0;
+	margin: 0 auto;
+	width: 20%;
 	text-align: center;
 	padding-top: 20px;
+}
+
+ul{
+    list-style-type: none;
+    width: 92%;
+
+}
+li{
+	width: 20%;
+	font-size: 20px;
+	margin: 0 auto;
 }

@@ -1,23 +1,38 @@
-//var fizzbuzz = prompt("enter a number")
+$('.number').fadeIn(2000);
 
-for (var i= 1; i<=100; i++) {
+$('button').on('click', function () {
+    var num = $('input').val();
+    
+    if (isNaN(num) || $.trim(num) == '') {
+        alert("Enter a number dumbass");
+    } else {
+        fizzBuzz(num);
+    }
+});
 
-if (i%3 === 0) {
+function fizzBuzz(num) {
+    var FizzBuzz;
 
-     if (i%3===0 && i%5 === 0) {
-       console.log("FizzBuzz");
-   }
-   else {
-       console.log("Fizz");
-   }
+    $('.number').fadeOut(2000);
+
+    for (var i = 1; i <= num; i++) {
+        if (i % 3 === 0) {
+
+            if (i % 3 === 0 && i % 5 === 0) {
+                FizzBuzz = 'FizzBuzz';
+            } else {
+                FizzBuzz = 'Fizz';
+            }
+        } else if (i % 5 === 0) {
+            FizzBuzz = 'Buzz';
+        } else {
+            FizzBuzz = i;
+        }
+
+        $('ul').append("<li>" + FizzBuzz + "</li>");
+    }
 }
 
-else if (i%5 === 0) {
-    console.log("Buzz");
-}
-else {
-console.log(i);
-}
-}
 
 
+//http://jsfiddle.net/b8cbztc2/
